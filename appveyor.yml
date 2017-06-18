@@ -47,6 +47,7 @@ build_script:
 after_build:
 - cmd: |
     7z a starviewer.7z bin/*
+    mv starviewer.7z %APPVEYOR_BUILD_FOLDER%
 artifacts:
   - path: starviewer.7z
     name: starviewer
