@@ -46,7 +46,7 @@ build_script:
     jom -j2
 after_build:
 - cmd: |
-    7z a starviewer.7z ../../bin/*
+    7z a starviewer.7z bin/*
 artifacts:
   - path: starviewer.7z
     name: starviewer
